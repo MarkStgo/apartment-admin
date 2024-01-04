@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Perfil de Condominio Agregado</title>
+    <style>
+        body {
+            background-image: url("login.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+            .banner {
+        background-color: #34495e;
+        color: white;
+        text-align: center;
+        padding: 30px 0px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+    }
+
+    .banner h1 {
+        margin: 0;
+        font-size: 40px;
+    }
+
+    .form-box {
+        background-color: #ffffff;
+        color: #333;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        padding: 80px;
+        border-radius: 10px;
+        text-align: center;
+        max-width: 500px;
+    }
+
+    h3 {
+        color: #333;
+        margin-bottom: 30px;
+        font-size: 24px;
+    }
+
+    input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 15px 60px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #0062cc;
+    }
+</style>
+</head>
+<body>
+    <div class="banner">
+        <h1>Your condominium profile has been successfully added!</h1>
+    </div>
+    <div class="form-box">
+        <h3>Let's continue completing your profile by adding your first apartment account.</h3>
+        <form action="addprofile.php">
+            <input type="submit" value="Continuar">
+        </form>
+    </div>
+</body>
+</html>

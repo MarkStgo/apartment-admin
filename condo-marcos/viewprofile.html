@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>View Profiles</title>
+</head>
+    <style>
+
+.banner {
+  background-color: #34495e;
+  color: white;
+  text-align: center;
+  padding: 30px 0px;  
+  width: 100%
+  
+}
+.banner h1 {
+  margin: 0;
+  font-size: 48px; 
+}
+        
+        
+        
+        
+.form-box {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  background-color: #ffffff;
+  color: #333;
+  margin: 0 auto; 
+  box-shadow: 0 0 20px #000000;
+  padding: 60px;
+  border-radius: 30px;
+}
+  form {
+  
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  background-color: lightgray;  
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+      
+}
+      
+
+label {
+  display: inline-block;
+  width: 130px;
+  margin-bottom: 10px;
+  font-weight: bold;    
+}
+        
+        
+        
+ body {
+  background-image: url("pic3.png");
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+        
+
+        
+        
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+select,
+textarea {
+  width: 90%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+select {
+  height: 40px;
+}
+        
+        
+        
+ h2 {
+font-family: Arial, sans-serif;
+text-align: center;
+margin-bottom: 20px;
+color: aliceblue;
+}
+
+        
+        
+textarea {
+  height: 100px;
+}
+
+        
+        
+input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 40px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+        
+
+input[type="submit"]:hover {
+  background-color: #34495e;
+}
+ .back_btn  { 
+ color: #fff;
+  background-color: #555;
+  padding: 10px 40px;
+  border-radius: 5px;
+  text-decoration: none;
+     font-size: 13px;
+  transition: background-color 0.2s ease-in-out;
+}
+       
+    
+
+    .filter {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.debt {
+  color: red;
+}
+
+.no-debt {
+  color: green;
+}
+</style>
+    
+    <!---------------------------->
+    
+<body>
+<div class="banner">
+  <h2>Search and View Apartment Profiles</h2>
+</div>
+    <div class="form-box">
+	<form action="">
+	<div class="filter">
+  <label for="owner">Owner:</label>
+  <input type="text" id="owner" onkeyup="filterTable()" placeholder="Search by owner name...">
+  
+  <label for="balance">Balance:</label>
+  <select id="balance" onchange="filterTable()">
+    <option value="">All</option>
+    <option value="debt">Debt</option>
+    <option value="no-debt">No Debt</option>
+  </select>
+</div>
+
+<table id="apartments">
+  <thead>
+    <tr>
+      <th>Apartment</th>
+      <th>Owner</th>
+      <th>Balance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>101</td>
+      <td>John Doe</td>
+      <td class="debt">-$100</td>
+    </tr>
+    <tr>
+      <td>102</td>
+      <td>Jane Smith</td>
+      <td class="no-debt">$0</td>
+    </tr>
+    <tr>
+      <td>103</td>
+      <td>Bob Johnson</td>
+      <td class="debt">-$50</td>
+    </tr>
+    <tr>
+      <td>104</td>
+      <td>Alice Lee</td>
+      <td class="no-debt">$0</td>
+    </tr>
+  </tbody>
+</table>
+
+
+		<input type="submit" value="Submit">
+        
+	</form>
+    </div>
+</body>
+</html>

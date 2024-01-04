@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Payments</title>
+</head>
+    <style>
+
+.banner {
+  background-color: #34495e;
+  color: white;
+  text-align: center;
+  padding: 20px 0px;  
+  width: 100%
+}
+        
+.banner h1 {
+  margin: 0;
+  font-size: 48px;
+  border: 2px solid black;
+}
+        
+        
+        
+.form-box {
+  width: 100%;
+  max-width: 400px; 
+  height: auto;
+  background-color: #ffffff;
+  color: #333;
+  margin: 0 auto; 
+  box-shadow: 0 0 20px #000000;
+  padding: 40px;
+  border-radius: 30px;
+}
+  form {
+  
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  background-color: lightgray;  
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;    
+}
+     
+        
+
+label {
+  display: inline-block;
+  width: 180px;
+  margin-bottom: 0px;
+  font-weight: bold;    
+}
+   
+        
+        
+        
+ body {
+  background-image: url("pic.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+        
+
+        
+        
+
+
+        
+        
+        
+ h1 {
+font-family: Arial, sans-serif;
+text-align: center;
+margin-bottom: 20px;
+color: aliceblue;
+}
+
+
+        
+        
+input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 40px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+        
+
+input[type="submit"]:hover {
+  background-color: #0062cc;
+}
+ .back_btn  { 
+ color: #fff;
+  background-color: #555;
+  padding: 10px 40px;
+  border-radius: 5px;
+  text-decoration: none;
+     font-size: 13px;
+  transition: background-color 0.2s ease-in-out;
+}
+        
+        
+        
+        
+     /*----------------------------*/   
+        
+        
+        h1, h2, h3 {
+  text-align: center;
+}
+
+.charges {
+  display: inline-block;
+  width: 40%;
+  padding: 10px;
+  border: 0px6;
+  margin: 20px;
+}
+.payments {
+  display: inline-block;
+  width: 40%;
+  padding: 10px;
+  border: 0px ;
+  margin: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;    
+  width: 90%;
+  max-width: 450px; 
+  height: auto;
+  background-color: #ffffff;
+  color: #333;
+  margin: 0 auto; 
+  box-shadow: 0 0 20px #000000;
+  padding: 40px;
+  border-radius: 50px;
+}
+
+
+
+input[type="number"] {
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+
+    </style>
+    <!---------------------------->
+    
+<body>
+<div class="banner">
+  <h1>Apartment Charges and Payments</h1>
+ <div class="search">
+      
+        <label for="search-input">Search for apartment:</label>
+        <input type="text" id="search-input" name="search-input">
+        <input type="submit" value="Submit">
+      
+    </div>
+      
+    <h2>Showing: Apartment A</h2>
+    <div class="charges">
+      <h3>Additional Charges</h3>
+      <form>
+        <label for="fine">Fine:</label>
+        <input type="number" id="fine" name="fine"><br><br>
+        <label for="misc-charges">Miscellaneous Charges:</label>
+        <input type="number" id="misc-charges" name="misc-charges"><br><br>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+    <div class="payments">
+      <h3>Payments</h3>
+      <form>
+        <label for="payment-amount">Payment Amount:</label>
+        <input type="number" id="payment-amount" name="payment-amount"><br><br>
+        <input type="submit" value="Submit">
+      </form>
+    </div>   
+	
+    </div>
+</body>
+</html>
